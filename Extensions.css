@@ -1,0 +1,259 @@
+.extensions-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 0px;
+}
+body {
+    background-color: var(--bg-color);
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Noto Sans", sans-serif;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+    border: none;
+    font-size: 14px;
+}
+button:hover {
+    background-color: var(--accent);
+    color: black;
+}
+h3 {
+    color: var(--h3-color);
+    font-weight: 700;
+}
+h1 {
+    color: var(--h1-color);
+    font-weight: 700;
+}
+p {
+    color: #bfc6d4;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    justify-content: space-between;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 8px;
+    left: 4px;
+    right: 4px;
+    bottom: 8px;
+    background-color: grey;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: tomato;
+}
+input:checked + .slider::before {
+    transform: translateX(26px);
+}
+
+@media(max-width:500px){
+    body{
+        background-color: black;
+    }
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 24px;
+    margin-bottom: 40px;
+
+    background-color: var(--header-bg);
+    border-radius: 12px;
+}
+img{
+    width: 120px;
+    height: auto;
+}
+#theme-btn{
+    background-color: var(--theme-btn-bg);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--theme-btn-color);
+    font-size: 8px;
+}
+.inactive{
+    opacity: 0.5;
+}
+:root {
+    --bg-color: #050b21;
+    --card-bg: #1f2535;
+    --text-color: #ffffff;
+    --button-bg: #2a324b;
+    --accent: #ff6b6b;
+    --header-bg: #1f2535;
+    --h1-color: #ffffff;
+    --h3-color: #ffffff;
+    --theme-btn-bg: #2a3246;
+    --theme-btn-color: #ffffff;
+}
+body.light-theme {
+    --bg-color: #f5f7fa;
+    --card-bg: #ffffff;
+    --text-color: #1a1a1a;
+    --button-bg: #ffffff;
+    --accent: #ff6b6b;
+    --header-bg: #ffffff;
+    --h1-color: #1a1a1a;
+    --h3-color: #1a1a1a;
+    --theme-btn-bg: #bfc6d4;
+    --theme-btn-color: #1a1a1a;
+}
+.icon{
+    height: 40px;
+    width: 40px;
+}
+.card-top{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+.card{
+    background-color: var(--card-bg);
+    width: 350px;
+    height: 155px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #202636;
+    border-radius: 15px;
+}
+#flick{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#flickq{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 20px;
+}
+#flickw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#flicke{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#flickr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#flickt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#flicky{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#flicku{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#flicki{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#flicko{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#flickp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#flicka{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.text h3{
+     margin: 0;
+}
+.text p{
+    margin: 5px 0 0;
+}
+.filter-buttons{
+  display: flex;
+  gap: 12px;
+}
+.filter-active{
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: none;
+}
+.filter-all{
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: none;
+}
+.filter-inactive{
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: none;
+}
