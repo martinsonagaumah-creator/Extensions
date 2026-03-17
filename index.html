@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap">
 </head>
 <body>
-    <header id="header">
-        <div class="logo">
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
             <img src="logo.svg" alt="Extensions Logo">
         </div>
         <button id="theme-btn">Change Theme</button>
-    </header>
-        <div class="top">
+        </div>
+        </div>
+        </header>
+
+        <section>
+        <div class="container">
+        <div class="top-wrapper">
         <h1>Extensions List</h1>
         
         <div class="filter-buttons">
@@ -23,16 +30,22 @@
         <button class="filter-inactive">Inactive</button>
         </div>
         </div>
-    <div class="extensions-grid" >
+
+        </div>
+        <div class="container">
+            <div class="extensions-grid" >
         <div data-active="true" class="card">
+        <div>
         <div class="card-top">
-            <img src="logo-devlens.svg" class="icon">
+        <img src="logo-devlens.svg" class="icon">
         </div>
         <div class="text">
         <h3>DevLens</h3>
         <p>Quickly inspect page layouts and visualize elements boundaries.</p>
         </div>
-        <div  id="flicka">
+        </div> 
+        
+        <div  class="flick">
         <button class="remove-btn">Remove</button>
         <label class="switch">
             <input type="checkbox">
@@ -40,7 +53,9 @@
         </label>
         </div>
     </div>
+
     <div data-active="true" class="card">
+        <div>
         <div class="card-top">
             <img src="logo-style-spy.svg" class="icon">
         </div>
@@ -48,7 +63,9 @@
         <h3>StyleSpy</h3>
         <p>Instantly analyze and copy CSS from any webpage element.</p>
         </div>
-        <div id="flickp">
+        </div>
+
+        <div class="flick">
         <button class="remove-btn">Remove</button>
         <label class="switch">
             <input type="checkbox">
@@ -56,7 +73,9 @@
         </label>
         </div>
     </div>
+
     <div data-active="false" class="card" >
+        <div>
         <div class="card-top">
             <img src="logo-speed-boost.svg" class="icon">
         </div>
@@ -64,7 +83,9 @@
         <h3>SpeedBoost</h3>
         <p>Optimizes browser resource usage to accelerate page loading.</p>
         </div>
-        <div id="flicko">
+        </div>
+
+        <div class="flick">
         <button class="remove-btn">Remove</button>
         <label class="switch">
             <input type="checkbox">
@@ -72,7 +93,9 @@
         </label>
         </div>
     </div>
+
     <div data-active="true" class="card">
+        <div>
         <div class="card-top">
             <img src="logo-json-wizard.svg" class="icon">
         </div>
@@ -80,7 +103,9 @@
         <h3>JSONWizard</h3>
         <p>Formats, validates, and prettifies JSON response in-browser.</p>
         </div>
-        <div id="flicki">
+        </div>
+
+        <div class="flick">
         <button class="remove-btn">Remove</button>
         <label class="switch">
             <input type="checkbox">
@@ -88,7 +113,9 @@
         </label>
         </div>
     </div>
+
     <div data-active="true" class="card">
+        <div>
         <div class="card-top">
             <img src="logo-tab-master-pro.svg" class="icon">
         </div>
@@ -96,7 +123,9 @@
         <h3>TabMaster Pro</h3>
         <p>Organizes browser tabs into groups and sessions.</p>
         </div>
-        <div id="flicku">
+        </div>
+
+        <div class="flick">
         <button class="remove-btn">Remove</button>
         <label class="switch">
             <input type="checkbox">
@@ -104,7 +133,9 @@
         </label>
         </div>
     </div>
+
     <div data-active="false" class="card">
+        <div>
         <div class="card-top">
             <img src="logo-viewport-buddy.svg" class="icon">
         </div>
@@ -112,7 +143,9 @@
         <h3>ViewportBuddy</h3>
         <p>Simulates various screen resolutions directly within the browser.</p>
         </div>
-        <div id="flicky">
+        </div>
+
+        <div class="flick">
         <button class="remove-btn">Remove</button>
         <label class="switch">
             <input type="checkbox">
@@ -120,7 +153,9 @@
         </label>
         </div>
     </div>
+
     <div data-active="true" class="card">
+        <div>
         <div class="card-top">
             <img src="logo-markup-notes.svg" class="icon">
         </div>
@@ -128,7 +163,9 @@
         <h3>Markup Notes</h3>
         <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
         </div>
-        <div id="flickt">
+        </div>
+
+        <div class="flick">
         <button class="remove-btn">Remove</button>
         <label class="switch">
             <input type="checkbox">
@@ -136,7 +173,9 @@
         </label>
         </div>
     </div>
+
     <div data-active="false" class="card">
+        <div>
         <div class="card-top">
             <img src="logo-grid-guides.svg" class="icon">
         </div>
@@ -144,7 +183,9 @@
         <h3>GridGuides</h3>
         <p>Overlay customize grids and alignment guides on any webpage.</p>
         </div>
-        <div id="flickr">
+        </div>
+
+        <div class="flick">
         <button class="remove-btn">Remove</button>
         <label class="switch">
             <input type="checkbox">
@@ -152,7 +193,9 @@
         </label>
         </div>
     </div>
+
     <div data-active="true" class="card">
+        <div>
         <div class="card-top">
             <img src="logo-palette-picker.svg" class="icon">
         </div>
@@ -160,7 +203,9 @@
         <h3>Palette Picker</h3>
         <p>Instantly extracts color palettes from any webpage.</p>
         </div>
-        <div id="flicke">
+        </div>
+
+        <div class="flick">
         <button class="remove-btn">Remove</button>
         <label class="switch">
             <input type="checkbox">
@@ -168,7 +213,9 @@
         </label>
         </div>
     </div>
+
     <div data-active="true" class="card">
+        <div>
         <div class="card-top">
             <img src="logo-link-checker.svg" class="icon">
         </div>
@@ -176,7 +223,9 @@
         <h3>LinkChecker</h3>
         <p>Scans and highlights broken links on any page.</p>
         </div>
-        <div id="flickw">
+        </div>
+
+        <div class="flick">
         <button class="remove-btn">Remove</button>
         <label class="switch">
             <input type="checkbox">
@@ -184,7 +233,9 @@
         </label>
         </div>
     </div>
+
     <div data-active="false" class="card">
+        <div>
         <div class="card-top">
             <img src="logo-dom-snapshot.svg" class="icon">
         </div>
@@ -192,7 +243,9 @@
         <h3>DOM Snapshot</h3>
         <p>Capture and export DOM structures quickly.</p>
         </div>
-        <div id="flickq">
+        </div>
+
+        <div class="flick">
         <button class="remove-btn">Remove</button>
         <label class="switch">
             <input type="checkbox">
@@ -200,7 +253,9 @@
         </label>
         </div>
     </div>
+
     <div data-active="true" class="card">
+        <div>
         <div class="card-top">
             <img src="logo-console-plus.svg" class="icon">
         </div>
@@ -208,7 +263,9 @@
         <h3>ConsolePlus</h3>
         <p>Enhanced developer console with advanced filtering and logging.</p>
         </div>
-        <div  id="flick">
+        </div>
+
+        <div  class="flick">
         <button class="remove-btn">Remove</button>
         <label class="switch">
             <input type="checkbox">
@@ -217,6 +274,8 @@
         </div>
     </div>
     </div>
+    </div>
+    </section>
     <script src="Extensions.js"></script>
 </body>
 </html>
